@@ -6,17 +6,22 @@ import "./AuthenticatedLayout.css";
 
 export default class AuthenticatedLayout extends Component {
 
-    constructor(props, context) {
-        super(props, context);
-    }
-
     render() {
         return (
             <div>
                 <section id="headerSection">
-                    <div>
-                        <h1>Header</h1>
-                    </div>
+                    <nav className="pt-navbar pt-dark">
+                        <div className="pt-navbar-group pt-align-left">
+                            <div className="pt-navbar-heading">Taskr</div>
+                        </div>
+                        <div className="pt-navbar-group pt-align-right">
+                            <button className="pt-button pt-minimal pt-icon-home">Home</button>
+                            <span className="pt-navbar-divider"></span>
+                            <button className="pt-button pt-minimal pt-icon-user"></button>
+                            <button className="pt-button pt-minimal pt-icon-notifications"></button>
+                            <button className="pt-button pt-minimal pt-icon-cog"></button>
+                        </div>
+                    </nav>
                 </section>
                 <section id="contentSection">
                     {this.props.children}

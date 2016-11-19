@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import {Router, Route, IndexRoute, browserHistory} from "react-router";
 import './App.css';
+import AuthenticatedLayout from "./components/layouts/AuthenticatedLayout";
+import WelcomePage from "./components/welcome/WelcomePage";
+import AboutPage from "./components/about/AboutPage";
 
 class App extends Component {
     // requireAuth(nextState, replace) {
@@ -15,10 +18,12 @@ class App extends Component {
         return (
             <Router history={browserHistory}>
                 <Route path="/" component={AuthenticatedLayout}>
-                    <IndexRoute component={AssetsView} onEnter={this.requireAuth}></IndexRoute>
-                    <Route path="fieldView" component={FieldView} onEnter={this.requireAuth}></Route>
-                    <Route path="fieldView/:assetKey" component={FieldView} onEnter={this.requireAuth}></Route>
-                    <Route path="ndviToolkit" component={NdviToolkitTestView} onEnter={this.requireAuth}></Route>
+                    <IndexRoute component={WelcomePage}></IndexRoute>
+                    {/*<IndexRoute component={AssetsView} onEnter={this.requireAuth}></IndexRoute>*/}
+                    {/*<Route path="about" component={FieldView} onEnter={this.requireAuth}></Route>*/}
+                    <Route path="about" component={AboutPage}></Route>
+                    {/*<Route path="fieldView/:assetKey" component={FieldView} onEnter={this.requireAuth}></Route>*/}
+                    {/*<Route path="ndviToolkit" component={NdviToolkitTestView} onEnter={this.requireAuth}></Route>*/}
                 </Route>
                 {/*<Route path="/login" component={NoMenuLayout}>*/}
                     {/*<IndexRoute component={LoginView}></IndexRoute>*/}
