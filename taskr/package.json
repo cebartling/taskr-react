@@ -10,6 +10,7 @@
     "@blueprintjs/datetime": "^1.0.1",
     "@blueprintjs/table": "^1.0.1",
     "firebase": "^3.6.1",
+    "immutability-helper": "^2.0.0",
     "mobx": "^2.6.3",
     "mobx-react": "^3.5.9",
     "mobx-react-devtools": "^4.2.9",
