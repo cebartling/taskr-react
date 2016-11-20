@@ -4,6 +4,7 @@ import './App.css';
 import AuthenticatedLayout from "./components/layouts/AuthenticatedLayout";
 import WelcomePage from "./components/welcome/WelcomePage";
 import AboutPage from "./components/about/AboutPage";
+import TaskBoardPage from "./components/task_board/TaskBoardPage";
 
 class App extends Component {
     // requireAuth(nextState, replace) {
@@ -21,6 +22,7 @@ class App extends Component {
                     <IndexRoute component={WelcomePage}></IndexRoute>
                     {/*<IndexRoute component={AssetsView} onEnter={this.requireAuth}></IndexRoute>*/}
                     {/*<Route path="about" component={FieldView} onEnter={this.requireAuth}></Route>*/}
+                    <Route path="taskBoard" component={TaskBoardPage}></Route>
                     <Route path="about" component={AboutPage}></Route>
                     {/*<Route path="fieldView/:assetKey" component={FieldView} onEnter={this.requireAuth}></Route>*/}
                     {/*<Route path="ndviToolkit" component={NdviToolkitTestView} onEnter={this.requireAuth}></Route>*/}

@@ -4,8 +4,8 @@ import "./WelcomePage.css";
 class WelcomePage extends Component {
     render() {
         return (
-            <div className="row">
-                <div className="jumbotron col-lg-12">Welcome</div>
+            <div className="welcome-page">
+                <h1>Welcome</h1>
             </div>
         );
     }

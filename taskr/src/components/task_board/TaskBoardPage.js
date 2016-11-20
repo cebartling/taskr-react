@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import "./WelcomePage.css";
+import "./TaskBoardPage.css";
 
 class TaskBoardPage extends Component {
     render() {
         return (
-            <div>
+            <div className="task-board-page">
                 <h1>Task Board</h1>
             </div>
         );
