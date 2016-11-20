@@ -9,6 +9,7 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.5",
     "classnames": "^2.2.5",
     "firebase": "^3.6.1",
     "immutability-helper": "^2.0.0",

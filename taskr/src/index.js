@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import firebase from "firebase";
+import "bootstrap/dist/css/bootstrap-flex.css"
 
 const config = {
     apiKey: "AIzaSyB4kZD9hoMFucDLj9Oaz2XD6IguEUx3Owo",

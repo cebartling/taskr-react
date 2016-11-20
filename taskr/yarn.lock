@@ -2,34 +2,6 @@
 # yarn lockfile v1
 
 
-"@blueprintjs/core@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/core/-/core-1.0.1.tgz#81fbfdfe0ea02bb90b80b1be31a01e73eb625806"
-  dependencies:
-    classnames "^2.2"
-    dom4 "^1.8"
-    normalize.css "4.1.1"
-    pure-render-decorator "~1.1.1"
-    tether "^1.2"
-
-"@blueprintjs/datetime@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/datetime/-/datetime-1.0.1.tgz#cff4860bf159bf2387d44b79eff5db565986dc7f"
-  dependencies:
-    "@blueprintjs/core" "^1.0.1"
-    classnames "^2.2"
-    moment "^2.14.1"
-    react-day-picker "^2.5.0"
-
-"@blueprintjs/table@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/table/-/table-1.0.1.tgz#ef884a18ab319d9b8dc6513e234371c616b414ae"
-  dependencies:
-    "@blueprintjs/core" "^1.0.1"
-    classnames "^2.2"
-    es6-shim "^0.35"
-    react "^15.0.1 || ^0.14"
-
 Base64@~0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/Base64/-/Base64-0.2.1.tgz#ba3a4230708e186705065e66babdd4c35cf60028"
@@ -1048,6 +1020,13 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bootstrap@^4.0.0-alpha.5:
+  version "4.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0-alpha.5.tgz#a126b648c3bd2f52b8fad4bbc5e2d0ad2abf7064"
+  dependencies:
+    jquery "1.9.1 - 3"
+    tether "^1.3.7"
+
 brace-expansion@^1.0.0:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.6.tgz#7197d7eaa9b87e648390ea61fc66c84427420df9"
@@ -1226,7 +1205,7 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@^2.2, classnames@^2.2.0, classnames@^2.2.5:
+classnames@^2.2.0, classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -1705,10 +1684,6 @@ dom-storage@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/dom-storage/-/dom-storage-2.0.2.tgz#ed17cbf68abd10e0aef8182713e297c5e4b500b0"
 
-dom4@^1.8:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/dom4/-/dom4-1.8.3.tgz#2b0aa096b46368e33bbd2c2767f0e32dbb3394cd"
-
 domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
@@ -1881,10 +1856,6 @@ es6-set@~0.1.3:
     es6-iterator "2"
     es6-symbol "3"
     event-emitter "~0.3.4"
-
-es6-shim@^0.35:
-  version "0.35.1"
-  resolved "https://registry.yarnpkg.com/es6-shim/-/es6-shim-0.35.1.tgz#a23524009005b031ab4a352ac196dfdfd1144ab7"
 
 es6-symbol@3, es6-symbol@~3.1, es6-symbol@~3.1.0:
   version "3.1.0"
@@ -2201,7 +2172,7 @@ fb-watchman@^1.8.0, fb-watchman@^1.9.0:
   dependencies:
     bser "^1.0.2"
 
-fbjs@^0.8.0, fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.5:
+fbjs@^0.8.1, fbjs@^0.8.4, fbjs@^0.8.5:
   version "0.8.6"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.6.tgz#7eb67d6986b2d5007a9b6e92e0e7cb6f75cad290"
   dependencies:
@@ -3438,6 +3409,10 @@ jodid25519@^1.0.0:
   dependencies:
     jsbn "~0.1.0"
 
+"jquery@1.9.1 - 3":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.1.1.tgz#347c1c21c7e004115e0a4da32cece041fad3c8a3"
+
 js-base64@^2.1.9:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
@@ -3999,10 +3974,6 @@ mobx@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/mobx/-/mobx-2.6.3.tgz#f2d8fac660edde38a9df5e37b924065ff0f1104a"
 
-moment@^2.14.1:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.16.0.tgz#f38f2c97c9889b0ee18fc6cc392e1e443ad2da8e"
-
 ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
@@ -4150,10 +4121,6 @@ normalize-url@^1.4.0:
     prepend-http "^1.0.0"
     query-string "^4.1.0"
     sort-keys "^1.0.0"
-
-normalize.css@4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-4.1.1.tgz#4f0b1d5a235383252b04d8566b866cc5fcad9f0c"
 
 npmlog@^4.0.0:
   version "4.0.1"
@@ -4749,12 +4716,6 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
-pure-render-decorator@~1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/pure-render-decorator/-/pure-render-decorator-1.1.1.tgz#f5e0b76ce12878e69da41a7ee8627fef54b5f57a"
-  dependencies:
-    fbjs "^0.8.0"
-
 q@^1.1.2:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.4.1.tgz#55705bcd93c5f3673530c2c2cbc0c2b3addc286e"
@@ -4821,12 +4782,6 @@ react-base16-styling@^0.2.3:
     base16 "^1.0.0"
     lodash.curry "^4.0.1"
 
-react-day-picker@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/react-day-picker/-/react-day-picker-2.5.0.tgz#7c8382822aa8b9237fe8913c10ee89a0539977f9"
-  dependencies:
-    react-is-deprecated "0.1.2"
-
 react-dev-utils@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-0.3.0.tgz#4a0527062a757579cb316fa254681aecca09d038"
@@ -4869,10 +4824,6 @@ react-icons@2.2.1:
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-2.2.1.tgz#354d725d60acf341d09fd50c6398ae7b97d7f157"
   dependencies:
     react-icon-base "2.0.3"
-
-react-is-deprecated@0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/react-is-deprecated/-/react-is-deprecated-0.1.2.tgz#301148f86ea428fe8e673eca7a372160b7579dbd"
 
 react-json-tree@0.9.0:
   version "0.9.0"
@@ -4954,7 +4905,7 @@ react-tooltip@3.2.1:
   dependencies:
     classnames "^2.2.0"
 
-"react@^15.0.1 || ^0.14", react@^15.4.0:
+react@^15.4.0:
   version "15.4.0"
   resolved "https://registry.yarnpkg.com/react/-/react-15.4.0.tgz#736c1c7c542e8088127106e1f450b010f86d172b"
   dependencies:
@@ -5562,7 +5513,7 @@ testcheck@^0.1.0:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/testcheck/-/testcheck-0.1.4.tgz#90056edd48d11997702616ce6716f197d8190164"
 
-tether@^1.2:
+tether@^1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/tether/-/tether-1.3.7.tgz#65578104741694f9672c808eae04a9adae7b0304"
 
