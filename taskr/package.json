@@ -9,9 +9,6 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
-    "@blueprintjs/core": "^1.0.1",
-    "@blueprintjs/datetime": "^1.0.1",
-    "@blueprintjs/table": "^1.0.1",
     "classnames": "^2.2.5",
     "firebase": "^3.6.1",
     "immutability-helper": "^2.0.0",

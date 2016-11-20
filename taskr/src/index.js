@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import firebase from "firebase";
-import { FocusStyleManager } from "@blueprintjs/core";
-import "@blueprintjs/core/dist/blueprint.css";
-
-FocusStyleManager.onlyShowFocusOnTabs();
 
 const config = {
     apiKey: "AIzaSyB4kZD9hoMFucDLj9Oaz2XD6IguEUx3Owo",
