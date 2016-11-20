@@ -46,7 +46,7 @@ export default class AuthenticatedLayout extends Component {
 
                 <footer className="footer">
                     <div className="container">
-                        <span className="text-muted">Pintail Consulting LLC</span>
+                        <span className="text-muted">Copyright &copy; 2016 Pintail Consulting LLC</span>
                     </div>
                 </footer>
             </div>
