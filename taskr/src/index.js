@@ -12,6 +12,7 @@ const config = {
     storageBucket: "taskr-demo.appspot.com",
     ymessagingSenderId: "1082586470711"
 };
+
 firebase.initializeApp(config);
 
 ReactDOM.render(
