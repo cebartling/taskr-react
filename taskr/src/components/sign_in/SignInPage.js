@@ -4,8 +4,8 @@ import "./SignInPage.css";
 class SignInPage extends Component {
     render() {
         return (
-            <div>
-                <h1>Sign in to Taskr</h1>
+            <div className="sign-in-page">
+                <h1></h1>
             </div>
         );
     }

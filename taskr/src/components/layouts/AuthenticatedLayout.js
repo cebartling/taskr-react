@@ -23,12 +23,6 @@ export default class AuthenticatedLayout extends Component {
                             <div className="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
                                 <Link to="/" className="navbar-brand">Taskr</Link>
                                 <ul className="nav navbar-nav">
-                                    {/*<li className="nav-item active">*/}
-                                    {/*<a className="nav-link" href="#">Nav item <span className="sr-only">(current)</span></a>*/}
-                                    {/*</li>*/}
-                                    {/*<li className="nav-item">*/}
-                                    {/*<a className="nav-link" href="#">Another nav item</a>*/}
-                                    {/*</li>*/}
                                     <li className="nav-item">
                                         <Link to="/taskBoard"
                                               className="nav-link"

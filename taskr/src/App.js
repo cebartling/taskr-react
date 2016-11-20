@@ -1,37 +1,36 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import {Router, Route, IndexRoute, browserHistory} from "react-router";
-import './App.css';
+import "./App.css";
 import AuthenticatedLayout from "./components/layouts/AuthenticatedLayout";
 import WelcomePage from "./components/welcome/WelcomePage";
 import AboutPage from "./components/about/AboutPage";
 import TaskBoardPage from "./components/task_board/TaskBoardPage";
+import SignInPage from "./components/sign_in/SignInPage";
+import UnauthenticatedLayout from "./components/layouts/UnauthenticatedLayout";
 
 class App extends Component {
-    // requireAuth(nextState, replace) {
-    //     if (!AuthenticationManager.loggedIn()) {
-    //         replace({
-    //             pathname: '/login', state: {nextPathname: nextState.location.pathname}
-    //         })
-    //     }
-    // }
+
+    requireAuth(nextState, replace) {
+        if (true) {
+            replace({
+                pathname: '/signIn', state: {nextPathname: nextState.location.pathname}
+            })
+        }
+    }
 
     render() {
         return (
             <Router history={browserHistory}>
                 <Route path="/" component={AuthenticatedLayout}>
-                    <IndexRoute component={WelcomePage}></IndexRoute>
-                    {/*<IndexRoute component={AssetsView} onEnter={this.requireAuth}></IndexRoute>*/}
-                    {/*<Route path="about" component={FieldView} onEnter={this.requireAuth}></Route>*/}
-                    <Route path="taskBoard" component={TaskBoardPage}></Route>
-                    <Route path="about" component={AboutPage}></Route>
-                    {/*<Route path="fieldView/:assetKey" component={FieldView} onEnter={this.requireAuth}></Route>*/}
-                    {/*<Route path="ndviToolkit" component={NdviToolkitTestView} onEnter={this.requireAuth}></Route>*/}
+                    <IndexRoute component={WelcomePage} onEnter={this.requireAuth}></IndexRoute>
+                    <Route path="taskBoard" component={TaskBoardPage} onEnter={this.requireAuth}></Route>
+                    <Route path="about" component={AboutPage} onEnter={this.requireAuth}></Route>
                 </Route>
-                {/*<Route path="/login" component={NoMenuLayout}>*/}
-                    {/*<IndexRoute component={LoginView}></IndexRoute>*/}
-                {/*</Route>*/}
-                {/*<Route path="/logout" component={NoMenuLayout}>*/}
-                    {/*<IndexRoute component={LogoutView}></IndexRoute>*/}
+                <Route path="/signIn" component={UnauthenticatedLayout}>
+                    <IndexRoute component={SignInPage}></IndexRoute>
+                </Route>
+                {/*<Route path="/signOut" component={NoMenuLayout}>*/}
+                    {/*<IndexRoute component={SignOutPage}></IndexRoute>*/}
                 {/*</Route>*/}
             </Router>
         );

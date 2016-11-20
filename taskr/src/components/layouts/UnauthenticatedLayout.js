@@ -1,7 +1,7 @@
 // @flow
 
 import React, {Component} from "react";
-// import {Link} from "react-router";
+import {Link} from "react-router";
 import "./UnauthenticatedLayout.css";
 
 export default class UnauthenticatedLayout extends Component {
@@ -9,26 +9,36 @@ export default class UnauthenticatedLayout extends Component {
     render() {
         return (
             <div>
-                <section id="headerSection">
-                    <nav className="pt-navbar pt-dark">
-                        <div className="pt-navbar-group pt-align-left">
-                            <div className="pt-navbar-heading">Taskr</div>
+                <div className="pos-f-t">
+                    <div className="collapse" id="navbar-header">
+                        <div className="container bg-inverse p-1">
+                            <h3>Collapsed content</h3>
+                            <p>Toggleable via the navbar brand.</p>
                         </div>
-                        <div className="pt-navbar-group pt-align-right">
-                            <button className="pt-button pt-minimal pt-icon-home">Home</button>
-                            <span className="pt-navbar-divider"></span>
-                            <button className="pt-button pt-minimal pt-icon-user"></button>
-                            <button className="pt-button pt-minimal pt-icon-notifications"></button>
-                            <button className="pt-button pt-minimal pt-icon-cog"></button>
+                    </div>
+                    <nav className="navbar navbar-light navbar-static-top bg-faded">
+                        <div className="container">
+                            <button className="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse"
+                                    data-target="#exCollapsingNavbar2" aria-expanded="false"
+                                    aria-controls="exCollapsingNavbar2" aria-label="Toggle navigation"></button>
+                            <div className="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+                                <Link to="/" className="navbar-brand">Taskr</Link>
+                                <ul className="nav navbar-nav">
+                                </ul>
+                            </div>
                         </div>
                     </nav>
-                </section>
-                <section id="contentSection">
+                </div>
+
+                <div className="container">
                     {this.props.children}
-                </section>
-                <section id="footerSection">
-                    <div>Pintail Consulting LLC &copy; 2016</div>
-                </section>
+                </div>
+
+                <footer className="footer">
+                    <div className="container">
+                        <span className="text-muted">Copyright &copy; 2016 Pintail Consulting LLC</span>
+                    </div>
+                </footer>
             </div>
         );
     }
